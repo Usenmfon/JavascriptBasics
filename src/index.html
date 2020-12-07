@@ -11,8 +11,17 @@
     <p>It about to go Up!</p>
 </body>
 <script>
-    document.write("Welcome to Javascript");
+    document.write("Welcome to Javascript \"hay!");
     document.write("<h1>This a first heading using js</h1>")
+    var price = 55.55;
+    document.write(price);
+    document.write("\t");
+    const name = ["Usen", "Mfon", "Uko"]
+    document.write(name[1])
+
+    function CallName(name) {
+        return document.write(name.map(n => n.length > 2))
+    }
 </script>
 
 </html>
