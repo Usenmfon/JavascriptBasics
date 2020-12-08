@@ -16,12 +16,12 @@
     var price = 55.55;
     document.write(price);
     document.write("\t");
-    const name = ["Usen", "Mfon", "Uko"]
-    document.write(name[1])
 
     function CallName(name) {
-        return document.write(name.map(n => n.length > 2))
+        return document.write(name.filter(n => n.length > 3))
     }
+    const name = ["Usen", "Mfon", "Uko"]
+    CallName(name);
     var x = 10 + 5;
     document.writeln("\n" + x);
 </script>
@@ -29,7 +29,27 @@
     var x = 5;
     var y = 6;
     var test = (x > y) ? true : false;
-    document.writeln(test);
+
+    function sayHello(a, b) {
+        return document.write(a * b);
+    }
+    var x = sayHello(5, 6);
+    var person = {
+        name: "John",
+        age: 31,
+        favColor: "green",
+        height: 183
+    };
+    document.write(person.height);
+
+    function animal(name, color, breed) {
+        this.name = name;
+        this.color = color;
+        this.breed = breed;
+    }
+    var a1 = new animal("Billy", "Blac", "Local")
+    var a2 = new animal("Kookie", "brown", "Caucasian")
+    document.write(a2.name);
 </script>
 
 </html>
